@@ -10,12 +10,12 @@ var shuffleSequence = seq(//"intro",
                             //  "doubleprem",
                             //  randomize("prac_double"),
                             //  "start",
-                                "1a1", "1a2", "1a3", "1a4", "1a5", "1a6", "1a7",
-                                "1b1", "1b2", "1b3", "1b4", "1b5", "1b6", "1b7",
-                                "1c1", "1c2", "1c3", "1c4", "1c5", "1c6", "1c7",
-                                "1d1", "1d2", "1d3", "1d4", "1d5", "1d6", "1d7",
-                                "1e1", "1e2", "1e3", "1e4", "1e5", "1e6", "1e7",
-                                "1f1", "1f2", "1f3", "1f4", "1f5", "1f6", "1f7",
+                                "1f7", "1f6", "1f5", "1f4", "1f3", "1f2", "1f1",
+                                "1e7", "1e6", "1e5", "1e4", "1e3", "1e2", "1e1",
+                                "1d7", "1d6", "1d5", "1d4", "1d3", "1d2", "1d1",
+                                "1c7", "1c6", "1c5", "1c4", "1c3", "1c2", "1c1",
+                                "1b7", "1b6", "1b5", "1b4", "1b3", "1b2", "1b1",
+                                "1a7", "1a6", "1a5", "1a4", "1a3", "1a2", "1a1",
                             );
 
 var defaults = [
@@ -39,7 +39,7 @@ var defaults = [
         hasCorrect: false,
         randomOrder: false
     },
-    "FlashSentence", {
+    "flashSentence", {
         hideProgressBar: true,
         timeout: 5000
     },
@@ -60,7 +60,7 @@ var defaults = [
     "Message", {
         hideProgressBar: true
     },
-    "Form", {
+    "form", {
         hideProgressBar: true,
         continueOnReturn: true,
         saveReactionTime: true
@@ -146,13 +146,14 @@ var items = [
 
       // condition names: #-premiseorder-P1-disjunctorder-P2-Ashape-imageset-Afallaciousimageside
 
-      //list1 - premises canonical order / every or three / trial order A / image order A
-          //trials: 1 block:  1001, 1117, 1142, 1023, 1069, 1140, 1035,
-          //        2 block:  1031, 1085, 1124, 1011, 1132, 1101, 1047,
-          //        3 block:  1134, 1109, 1057, 1128, 1075, 1037, 1089,
-          //        4 block:  1137, 1115, 1041, 1129, 1053, 1099, 1013,
-          //        5 block:  1107, 1067, 1125, 1063, 1143, 1025, 1095,
-          //        6 block:  1051, 1007, 1121, 1077, 1017, 1083, 1135
+      //list1 - premises canonical order / every or three / trial order B / image order A
+          //trials: 1 block:  1135, 1083, 1017, 1077, 1121, 1007, 1051,
+          //        2 block:  1095, 1025, 1143, 1063, 1125, 1067, 1107,
+          //        3 block:  1013, 1099, 1053, 1129, 1041, 1115, 1137,
+          //        4 block:  1089, 1037, 1075, 1128, 1057, 1109, 1134,
+          //        5 block:  1047, 1101, 1132, 1011, 1124, 1085, 1031,
+          //        6 block:  1035, 1140, 1069, 1023, 1142, 1117, 1001
+
 
       ["1a1",   //1001-canonical-disj-Afirst-someB-circle-conjunctiveA-right
                   "Message",        {html: {include: 'iifd_first_sound_every_circle_three_squares.html'}},
@@ -384,5 +385,4 @@ var items = [
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/mKarxSv.png"],
                                           ["K","https://imgur.com/VAObTsD.png"]]}],
-
 ];

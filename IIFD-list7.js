@@ -10,12 +10,12 @@ var shuffleSequence = seq(//"intro",
                             //  "doubleprem",
                             //  randomize("prac_double"),
                             //  "start",
-                                "1a1", "1a2", "1a3", "1a4", "1a5", "1a6", "1a7",
-                                "1b1", "1b2", "1b3", "1b4", "1b5", "1b6", "1b7",
-                                "1c1", "1c2", "1c3", "1c4", "1c5", "1c6", "1c7",
-                                "1d1", "1d2", "1d3", "1d4", "1d5", "1d6", "1d7",
-                                "1e1", "1e2", "1e3", "1e4", "1e5", "1e6", "1e7",
-                                "1f1", "1f2", "1f3", "1f4", "1f5", "1f6", "1f7",
+                                "3f7", "3f6", "3f5", "3f4", "3f3", "3f2", "3f1",
+                                "3e7", "3e6", "3e5", "3e4", "3e3", "3e2", "3e1",
+                                "3d7", "3d6", "3d5", "3d4", "3d3", "3d2", "3d1",
+                                "3c7", "3c6", "3c5", "3c4", "3c3", "3c2", "3c1",
+                                "3b7", "3b6", "3b5", "3b4", "3b3", "3b2", "3b1",
+                                "3a7", "3a6", "3a5", "3a4", "3a3", "3a2", "3a1",
                             );
 
 var defaults = [
@@ -146,240 +146,240 @@ var items = [
 
       // condition names: #-premiseorder-P1-disjunctorder-P2-Ashape-imageset-Afallaciousimageside
 
-      //list1 - premises canonical order / every or three / trial order A / image order A
-          //trials: 1 block:  1001, 1117, 1142, 1023, 1069, 1140, 1035,
-          //        2 block:  1031, 1085, 1124, 1011, 1132, 1101, 1047,
-          //        3 block:  1134, 1109, 1057, 1128, 1075, 1037, 1089,
-          //        4 block:  1137, 1115, 1041, 1129, 1053, 1099, 1013,
-          //        5 block:  1107, 1067, 1125, 1063, 1143, 1025, 1095,
-          //        6 block:  1051, 1007, 1121, 1077, 1017, 1083, 1135
+      //list1 - premises canonical order / three or every / trial order B / image order A
+          //trials: 1 block:  1002, 1118, 1142, 1024, 1070, 1140, 1036,
+          //        2 block:  1032, 1086, 1124, 1012, 1132, 1102, 1048,
+          //        3 block:  1134, 1120, 1058, 1128, 1076, 1038, 1090,
+          //        4 block:  1137, 1116, 1042, 1129, 1054, 1100, 1014,
+          //        5 block:  1108, 1068, 1125, 1064, 1143, 1026, 1096,
+          //        6 block:  1052, 1008, 1121, 1078, 1018, 1084, 1135
 
-      ["1a1",   //1001-canonical-disj-Afirst-someB-circle-conjunctiveA-right
-                  "Message",        {html: {include: 'iifd_first_sound_every_circle_three_squares.html'}},
+      ["3a1",   //1002-canonical-disj-Bfirst-someB-circle-conjunctiveA-right
+                  "Message",        {html: {include: 'iifd_first_sound_three_squares_every_circle.html'}},
                   "Message",        {html: {include: 'iifd_second_sound_some_squares.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/d9htci3.png"],
                                           ["K","https://imgur.com/CKEa3Zr.png"]]}],
-      ["1a2",   //1117-onlyP1-disj-Afirst-noP2-square-knownB-right
-                  "Message",        {html: {include: 'iifd_first_sound_every_square_three_circles.html'}},
+      ["3a2",   //1118-onlyP1-disj-Bfirst-noP2-square-knownB-right
+                  "Message",        {html: {include: 'iifd_first_sound_three_circles_every_square.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/KduS46H.png"],
                                           ["K","https://imgur.com/mnzhSDj.png"]]}],
-      ["1a3",   //1142-onlyP2-noP1-na-someA-circle-mixedAB-left
+      ["3a3",   //1142-onlyP2-noP1-na-someA-circle-mixedAB-left
                   "Message",        {html: {include: 'iifd_first_sound_some_circles.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/zIUwK4N.png"],
                                           ["K","https://imgur.com/eQh40x2.png"]]}],
-      ["1a4",   //1023-canonical-disj-Afirst-someB-square-mixedAB-left
-                  "Message",        {html: {include: 'iifd_first_sound_every_square_three_circles.html'}},
+      ["3a4",   //1024-canonical-disj-Bfirst-someB-square-mixedAB-left
+                  "Message",        {html: {include: 'iifd_first_sound_three_circles_every_square.html'}},
                   "Message",        {html: {include: 'iifd_second_sound_some_circles.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/M6bF0FW.png"],
                                           ["K","https://imgur.com/KduS46H.png"]]}],
-      ["1a5",   //1069-canonical-disj-Afirst-someA-square-conjunctiveB-right
-                  "Message",        {html: {include: 'iifd_first_sound_every_square_three_circles.html'}},
+      ["3a5",   //1070-canonical-disj-Bfirst-someA-square-conjunctiveB-right
+                  "Message",        {html: {include: 'iifd_first_sound_three_circles_every_square.html'}},
                   "Message",        {html: {include: 'iifd_second_sound_some_squares.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/mKarxSv.png"],
                                           ["K","https://imgur.com/mnzhSDj.png"]]}],
-      ["1a6",   //1140-onlyP2-noP1-na-someB-square-knownA-left
+      ["3a6",   //1140-onlyP2-noP1-na-someB-square-knownA-left
                   "Message",        {html: {include: 'iifd_first_sound_some_squares.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/VAObTsD.png"],
                                           ["K","https://imgur.com/M6bF0FW.png"]]}],
-      ["1a7",   //1035-canonical-disj-Afirst-someB-circle-knownB-left
-                  "Message",        {html: {include: 'iifd_first_sound_every_circle_three_squares.html'}},
+      ["3a7",   //1036-canonical-disj-Bfirst-someB-circle-knownB-left
+                  "Message",        {html: {include: 'iifd_first_sound_three_squares_every_circle.html'}},
                   "Message",        {html: {include: 'iifd_second_sound_some_squares.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/EhOp8QM.png"],
                                           ["K","https://imgur.com/eQh40x2.png"]]}],
-      ["1b1",   //1031-canonical-disj-Afirst-someB-square-conjunctiveB-left
-                  "Message",        {html: {include: 'iifd_first_sound_every_square_three_circles.html'}},
+      ["3b1",   //1032-canonical-disj-Bfirst-someB-square-conjunctiveB-left
+                  "Message",        {html: {include: 'iifd_first_sound_three_circles_every_square.html'}},
                   "Message",        {html: {include: 'iifd_second_sound_some_circles.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/mnzhSDj.png"],
                                           ["K","https://imgur.com/mKarxSv.png"]]}],
-      ["1b2",   //1085-onlyP1-disj-Afirst-noP2-square-conjunctiveA-right
-                  "Message",        {html: {include: 'iifd_first_sound_every_square_three_circles.html'}},
+      ["3b2",   //1086-onlyP1-disj-Bfirst-noP2-square-conjunctiveA-right
+                  "Message",        {html: {include: 'iifd_first_sound_three_circles_every_square.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/mKarxSv.png"],
                                           ["K","https://imgur.com/VAObTsD.png"]]}],
-      ["1b3",   //1124-onlyP2-noP1-na-someB-square-mixedAB-left
+      ["3b3",   //1124-onlyP2-noP1-na-someB-square-mixedAB-left
                   "Message",        {html: {include: 'iifd_first_sound_some_circles.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/M6bF0FW.png"],
                                           ["K","https://imgur.com/KduS46H.png"]]}],
-      ["1b4",   //1011-canonical-disj-Afirst-someB-circle-knownA-left
-                  "Message",        {html: {include: 'iifd_first_sound_every_circle_three_squares.html'}},
+      ["3b4",   //1012-canonical-disj-Bfirst-someB-circle-knownA-left
+                  "Message",        {html: {include: 'iifd_first_sound_three_squares_every_circle.html'}},
                   "Message",        {html: {include: 'iifd_second_sound_some_squares.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/CKEa3Zr.png"],
                                           ["K","https://imgur.com/zIUwK4N.png"]]}],
-      ["1b5",   //1132-onlyP2-noP1-na-someB-square-knownB-left
+      ["3b5",   //1132-onlyP2-noP1-na-someB-square-knownB-left
                   "Message",        {html: {include: 'iifd_first_sound_some_circles.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/mnzhSDj.png"],
                                           ["K","https://imgur.com/KduS46H.png"]]}],
-      ["1b6",   //1101-onlyP1-disj-Afirst-noP2-square-mixedAB-right
-                  "Message",        {html: {include: 'iifd_first_sound_every_square_three_circles.html'}},
+      ["3b6",   //1102-onlyP1-disj-Bfirst-noP2-square-mixedAB-right
+                  "Message",        {html: {include: 'iifd_first_sound_three_circles_every_square.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/KduS46H.png"],
                                           ["K","https://imgur.com/M6bF0FW.png"]]}],
-      ["1b7",   //1047-canonical-disj-Afirst-someA-square-conjunctiveA-left
-                  "Message",        {html: {include: 'iifd_first_sound_every_square_three_circles.html'}},
+      ["3b7",   //1048-canonical-disj-Bfirst-someA-square-conjunctiveA-left
+                  "Message",        {html: {include: 'iifd_first_sound_three_circles_every_square.html'}},
                   "Message",        {html: {include: 'iifd_second_sound_some_squares.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/VAObTsD.png"],
                                           ["K","https://imgur.com/mKarxSv.png"]]}],
-      ["1c1",   //1134-onlyP2-noP1-na-someB-circle-conjunctiveA-left
+      ["3c1",   //1134-onlyP2-noP1-na-someB-circle-conjunctiveA-left
                   "Message",        {html: {include: 'iifd_first_sound_some_circles.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/CKEa3Zr.png"],
                                           ["K","https://imgur.com/d9htci3.png"]]}],
-      ["1c2",   //1109-onlyP1-disj-Afirst-noP2-square-conjunctiveB-right
-                  "Message",        {html: {include: 'iifd_first_sound_every_square_three_circles.html'}},
+      ["3c2",   //1110-onlyP1-disj-Bfirst-noP2-square-conjunctiveB-right
+                  "Message",        {html: {include: 'iifd_first_sound_three_circles_every_square.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/mKarxSv.png"],
                                           ["K","https://imgur.com/mnzhSDj.png"]]}],
-      ["1c3",   //1057-canonical-disj-Afirst-someA-circle-mixedAB-right
-                  "Message",        {html: {include: 'iifd_first_sound_every_circle_three_squares.html'}},
+      ["3c3",   //1058-canonical-disj-Bfirst-someA-circle-mixedAB-right
+                  "Message",        {html: {include: 'iifd_first_sound_three_squares_every_circle.html'}},
                   "Message",        {html: {include: 'iifd_second_sound_some_circles.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/eQh40x2.png"],
                                           ["K","https://imgur.com/zIUwK4N.png"]]}],
-      ["1c4",   //1128-onlyP2-noP1-na-someB-square-conjunctiveB-left
+      ["3c4",   //1128-onlyP2-noP1-na-someB-square-conjunctiveB-left
                   "Message",        {html: {include: 'iifd_first_sound_some_circles.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/mnzhSDj.png"],
                                           ["K","https://imgur.com/mKarxSv.png"]]}],
-      ["1c5",   //1075-canonical-disj-Afirst-someA-circle-knownB-left
-                  "Message",        {html: {include: 'iifd_first_sound_every_circle_three_squares.html'}},
+      ["3c5",   //1076-canonical-disj-Bfirst-someA-circle-knownB-left
+                  "Message",        {html: {include: 'iifd_first_sound_three_squares_every_circle.html'}},
                   "Message",        {html: {include: 'iifd_second_sound_some_circles.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/EhOp8QM.png"],
                                           ["K","https://imgur.com/eQh40x2.png"]]}],
-      ["1c6",   //1037-canonical-disj-Afirst-someB-square-knownB-right
-                  "Message",        {html: {include: 'iifd_first_sound_every_square_three_circles.html'}},
+      ["3c6",   //1038-canonical-disj-Bfirst-someB-square-knownB-right
+                  "Message",        {html: {include: 'iifd_first_sound_three_circles_every_square.html'}},
                   "Message",        {html: {include: 'iifd_second_sound_some_circles.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/KduS46H.png"],
                                           ["K","https://imgur.com/mnzhSDj.png"]]}],
-      ["1c7",   //1089-onlyP1-disj-Afirst-noP2-circle-knownA-right
-                  "Message",        {html: {include: 'iifd_first_sound_every_circle_three_squares.html'}},
+      ["3c7",   //1090-onlyP1-disj-Bfirst-noP2-circle-knownA-right
+                  "Message",        {html: {include: 'iifd_first_sound_three_squares_every_circle.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/zIUwK4N.png"],
                                           ["K","https://imgur.com/CKEa3Zr.png"]]}],
-      ["1d1",   //1137-onlyP2-noP1-na-someB-circle-knownA-right
+      ["3d1",   //1137-onlyP2-noP1-na-someB-circle-knownA-right
                   "Message",        {html: {include: 'iifd_first_sound_some_circles.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/zIUwK4N.png"],
                                           ["K","https://imgur.com/CKEa3Zr.png"]]}],
-      ["1d2",   //1115-onlyP1-disj-Afirst-noP2-circle-knownB-left
-                  "Message",        {html: {include: 'iifd_first_sound_every_circle_three_squares.html'}},
+      ["3d2",   //1116-onlyP1-disj-Bfirst-noP2-circle-knownB-left
+                  "Message",        {html: {include: 'iifd_first_sound_three_squares_every_circle.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/EhOp8QM.png"],
                                           ["K","https://imgur.com/eQh40x2.png"]]}],
-      ["1d3",   //1041-canonical-disj-Afirst-someA-circle-conjunctiveA-right
-                  "Message",        {html: {include: 'iifd_first_sound_every_circle_three_squares.html'}},
+      ["3d3",   //1042-canonical-disj-Bfirst-someA-circle-conjunctiveA-right
+                  "Message",        {html: {include: 'iifd_first_sound_three_squares_every_circle.html'}},
                   "Message",        {html: {include: 'iifd_second_sound_some_circles.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/d9htci3.png"],
                                           ["K","https://imgur.com/CKEa3Zr.png"]]}],
-      ["1d4",   //1129-onlyP2-noP1-na-someB-circle-knownB-right
+      ["3d4",   //1129-onlyP2-noP1-na-someB-circle-knownB-right
                   "Message",        {html: {include: 'iifd_first_sound_some_squares.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/eQh40x2.png"],
                                           ["K","https://imgur.com/EhOp8QM.png"]]}],
-      ["1d5",   //1053-canonical-disj-Afirst-someA-square-knownA-right
-                  "Message",        {html: {include: 'iifd_first_sound_every_square_three_circles.html'}},
+      ["3d5",   //1054-canonical-disj-Bfirst-someA-square-knownA-right
+                  "Message",        {html: {include: 'iifd_first_sound_three_circles_every_square.html'}},
                   "Message",        {html: {include: 'iifd_second_sound_some_squares.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/M6bF0FW.png"],
                                           ["K","https://imgur.com/VAObTsD.png"]]}],
-      ["1d6",   //1099-onlyP1-disj-Afirst-noP2-circle-mixedAB-left
-                  "Message",        {html: {include: 'iifd_first_sound_every_circle_three_squares.html'}},
+      ["3d6",   //1100-onlyP1-disj-Bfirst-noP2-circle-mixedAB-left
+                  "Message",        {html: {include: 'iifd_first_sound_three_squares_every_circle.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/zIUwK4N.png"],
                                           ["K","https://imgur.com/eQh40x2.png"]]}],
-      ["1d7",   //1013-canonical-disj-Afirst-someB-square-knownA-right
-                  "Message",        {html: {include: 'iifd_first_sound_every_square_three_circles.html'}},
+      ["3d7",   //1014-canonical-disj-Bfirst-someB-square-knownA-right
+                  "Message",        {html: {include: 'iifd_first_sound_three_circles_every_square.html'}},
                   "Message",        {html: {include: 'iifd_second_sound_some_circles.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/M6bF0FW.png"],
                                           ["K","https://imgur.com/VAObTsD.png"]]}],
-      ["1e1",   //1107-onlyP1-disj-Afirst-noP2-circle-conjunctiveB-left
-                  "Message",        {html: {include: 'iifd_first_sound_every_circle_three_squares.html'}},
+      ["3e1",   //1108-onlyP1-disj-Bfirst-noP2-circle-conjunctiveB-left
+                  "Message",        {html: {include: 'iifd_first_sound_three_squares_every_circle.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/EhOp8QM.png"],
                                           ["K","https://imgur.com/d9htci3.png"]]}],
-      ["1e2",   //1067-canonical-disj-Afirst-someA-circle-conjunctiveB-left
-                  "Message",        {html: {include: 'iifd_first_sound_every_circle_three_squares.html'}},
+      ["3e2",   //1068-canonical-disj-Bfirst-someA-circle-conjunctiveB-left
+                  "Message",        {html: {include: 'iifd_first_sound_three_squares_every_circle.html'}},
                   "Message",        {html: {include: 'iifd_second_sound_some_circles.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/EhOp8QM.png"],
                                           ["K","https://imgur.com/d9htci3.png"]]}],
-      ["1e3",   //1125-onlyP2-noP1-na-someB-circle-conjunctiveB-right
+      ["3e3",   //1125-onlyP2-noP1-na-someB-circle-conjunctiveB-right
                   "Message",        {html: {include: 'iifd_first_sound_some_squares.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/EhOp8QM.png"],
                                           ["K","https://imgur.com/d9htci3.png"]]}],
-      ["1e4",   //1063-canonical-disj-Afirst-someA-square-mixedAB-left
-                  "Message",        {html: {include: 'iifd_first_sound_every_square_three_circles.html'}},
+      ["3e4",   //1064-canonical-disj-Bfirst-someA-square-mixedAB-left
+                  "Message",        {html: {include: 'iifd_first_sound_three_circles_every_square.html'}},
                   "Message",        {html: {include: 'iifd_second_sound_some_squares.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/M6bF0FW.png"],
                                           ["K","https://imgur.com/KduS46H.png"]]}],
-      ["1e5",   //1143-onlyP2-noP1-na-someA-square-mixedAB-right
+      ["3e5",   //1143-onlyP2-noP1-na-someA-square-mixedAB-right
                   "Message",        {html: {include: 'iifd_first_sound_some_squares.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/KduS46H.png"],
                                           ["K","https://imgur.com/M6bF0FW.png"]]}],
-      ["1e6",   //1025-canonical-disj-Afirst-someB-circle-conjunctiveB-right
-                  "Message",        {html: {include: 'iifd_first_sound_every_circle_three_squares.html'}},
+      ["3e6",   //1026-canonical-disj-Bfirst-someB-circle-conjunctiveB-right
+                  "Message",        {html: {include: 'iifd_first_sound_three_squares_every_circle.html'}},
                   "Message",        {html: {include: 'iifd_second_sound_some_squares.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/d9htci3.png"],
                                           ["K","https://imgur.com/EhOp8QM.png"]]}],
-      ["1e7",   //1095-onlyP1-disj-Afirst-noP2-square-knownA-left
-                  "Message",        {html: {include: 'iifd_first_sound_every_square_three_circles.html'}},
+      ["3e7",   //1096-onlyP1-disj-Bfirst-noP2-square-knownA-left
+                  "Message",        {html: {include: 'iifd_first_sound_three_circles_every_square.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/VAObTsD.png"],
                                           ["K","https://imgur.com/M6bF0FW.png"]]}],
-      ["1f1",   //1051-canonical-disj-Afirst-someA-circle-knownA-left
-                  "Message",        {html: {include: 'iifd_first_sound_every_circle_three_squares.html'}},
+      ["3f1",   //1052-canonical-disj-Bfirst-someA-circle-knownA-left
+                  "Message",        {html: {include: 'iifd_first_sound_three_squares_every_circle.html'}},
                   "Message",        {html: {include: 'iifd_second_sound_some_circles.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/CKEa3Zr.png"],
                                           ["K","https://imgur.com/zIUwK4N.png"]]}],
-      ["1f2",   //1007-canonical-disj-Afirst-someB-square-conjunctiveA-left
-                  "Message",        {html: {include: 'iifd_first_sound_every_square_three_circles.html'}},
+      ["3f2",   //1008-canonical-disj-Bfirst-someB-square-conjunctiveA-left
+                  "Message",        {html: {include: 'iifd_first_sound_three_circles_every_square.html'}},
                   "Message",        {html: {include: 'iifd_second_sound_some_circles.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/VAObTsD.png"],
                                           ["K","https://imgur.com/mKarxSv.png"]]}],
-      ["1f3",   //1121-onlyP2-noP1-na-someB-circle-mixedAB-right
+      ["3f3",   //1121-onlyP2-noP1-na-someB-circle-mixedAB-right
                   "Message",        {html: {include: 'iifd_first_sound_some_squares.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/eQh40x2.png"],
                                           ["K","https://imgur.com/zIUwK4N.png"]]}],
-      ["1f4",   //1077-canonical-disj-Afirst-someA-square-knownB-right
-                  "Message",        {html: {include: 'iifd_first_sound_every_square_three_circles.html'}},
+      ["3f4",   //1078-canonical-disj-Bfirst-someA-square-knownB-right
+                  "Message",        {html: {include: 'iifd_first_sound_three_circles_every_square.html'}},
                   "Message",        {html: {include: 'iifd_second_sound_some_squares.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/KduS46H.png"],
                                           ["K","https://imgur.com/mnzhSDj.png"]]}],
-      ["1f5",   //1017-canonical-disj-Afirst-someB-circle-mixedAB-right
-                  "Message",        {html: {include: 'iifd_first_sound_every_circle_three_squares.html'}},
+      ["3f5",   //1018-canonical-disj-Bfirst-someB-circle-mixedAB-right
+                  "Message",        {html: {include: 'iifd_first_sound_three_squares_every_circle.html'}},
                   "Message",        {html: {include: 'iifd_second_sound_some_squares.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/eQh40x2.png"],
                                           ["K","https://imgur.com/zIUwK4N.png"]]}],
-      ["1f6",   //1083-onlyP1-disj-Afirst-noP2-circle-conjunctiveA-left
-                  "Message",        {html: {include: 'iifd_first_sound_every_circle_three_squares.html'}},
+      ["3f6",   //1084-onlyP1-disj-Bfirst-noP2-circle-conjunctiveA-left
+                  "Message",        {html: {include: 'iifd_first_sound_three_squares_every_circle.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/CKEa3Zr.png"],
                                           ["K","https://imgur.com/d9htci3.png"]]}],
-      ["1f7",   //1135-onlyP2-noP1-na-someB-square-conjunctiveA-right
+      ["3f7",   //1135-onlyP2-noP1-na-someB-square-conjunctiveA-right
                   "Message",        {html: {include: 'iifd_first_sound_some_squares.html'}},
                   "PictureAccept",  {s: "Which one is it?",
                                     as:   [["D","https://imgur.com/mKarxSv.png"],

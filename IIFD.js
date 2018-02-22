@@ -53,8 +53,7 @@ var defaults = [
         blankText: "\u0020\u0020"
     },
     "Message", {
-        hideProgressBar: true,
-        transfer: "keypress"
+        hideProgressBar: true
     },
     "Form", {
         hideProgressBar: true,
@@ -65,7 +64,6 @@ var defaults = [
 
 // ========== START OF CODE TO COPY INTO YOUR DATA FILE ==========
 var IMAGES_TO_PRELOAD = [
-    //put familiarization trials in
 
     "https://imgur.com/CKEa3Zr.png", // 8-4c0s -   every-circle,                 conj & known conditions
     "https://imgur.com/EhOp8QM.png", // 8-0c3s -   three-square,                 conj & known conditions
@@ -73,8 +71,6 @@ var IMAGES_TO_PRELOAD = [
 
     "https://imgur.com/eQh40x2.png", // 8-2c3s -   every-circle,                 known & unknown conditions
     "https://imgur.com/zIUwK4N.png", // 8-4c2s -   three-square,                 known & unknown conditions
-    "https://imgur.com/2jFy0F3.png", // 8-3+c0s -  every-circle,                 unknown condition
-    "https://imgur.com/VXyqEVR.png", // 8-0c2+s -  three-square,                 unknown condition
 
     "https://imgur.com/VAObTsD.png", // 8-0c4s -   every-square,                 conj & known conditions
     "https://imgur.com/mnzhSDj.png", // 8-3c0s -   three-circle,                 conj & known conditions
@@ -82,8 +78,6 @@ var IMAGES_TO_PRELOAD = [
 
     "https://imgur.com/KduS46H.png", // 8-3c2s -   every-square,                 known & unknown conditions
     "https://imgur.com/M6bF0FW.png", // 8-2c4s -   three-circle,                 known & unknown conditions
-    "https://imgur.com/GQq24EB.png", // 8-0c3+s -  every-square,                 unknown condition
-    "https://imgur.com/Tj0Y7Ee.png", // 8-2+c0s -  three-circle,                 unknown condition
 
     "https://imgur.com/PTn3jIN.png", // 8-0c1s-control
     "https://imgur.com/xXIconM.png", // 8-0c2s-control
@@ -91,8 +85,6 @@ var IMAGES_TO_PRELOAD = [
     "https://imgur.com/zTHOZJg.png", // 8-2c1s-control
     "https://imgur.com/bk685Bb.png", // 8-3c1s-control
     "https://imgur.com/JwwC2C4.png", // 8-3c3s-control
-    "https://imgur.com/LTarzxJ.png", // 8-2c1+s-control
-    "https://imgur.com/u22f9u1.png", // 8-3+c0s-control
 
 ];
 
