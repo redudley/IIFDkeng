@@ -139,9 +139,28 @@ var items = [
 
     ["start","StartMessage", {html: {include: 'iifd_start.html'}}],
 
-    // need "prac_double" items - have one premise
-
-    // need "prac_double" items - have two premises
+    ["prac_single", //every shape: choice between 4c4s (correct, left) and 2c2s (wrong, right)
+                "Message",        {html: {include: 'iifd_eng_practice_first_every_shape.html'}},
+                "PictureAccept",  {s: "Which one is it?",
+                                  as:   [["D","https://imgur.com/wkDVZgd.png"], //4c4s - true
+                                        ["K","https://imgur.com/zXTKjiQ.png"]]}],//2c2s - false
+    ["prac_single", //three squares: choice between 1c3s (correct, right) and 1c2s (wrong, left)
+                "Message",        {html: {include: 'iifd_eng_practice_first_three_squares.html'}},
+                "PictureAccept",  {s: "Which one is it?",
+                                  as:   [["D","https://imgur.com/szZ1mVE.png"], //1c2s - false
+                                        ["K","https://imgur.com/yv9ULuj.png"]]}], //1c3s - true
+    ["prac_double", //one or four circles, every shape: choice between 4c4s (correct, right) and 1c2s (wrong, left)
+                "Message",        {html: {include: 'iifd_eng_practice_first_one_circles_four_circles.html'}},
+                "Message",        {html: {include: 'iifd_eng_practice_second_every_shape.html'}},
+                "PictureAccept",  {s: "Which one is it?",
+                                  as:   [["D","https://imgur.com/szZ1mVE.png"], //1c2s - false
+                                        ["K","https://imgur.com/wkDVZgd.png"]]}], //4c4s - true
+    ["prac_double", //two or three squares, two circles : choice between 2c2s (correct, left) and 1c3s (wrong, right)
+                "Message",        {html: {include: 'iifd_eng_practice_first_two_squares_three_squares.html'}},
+                "Message",        {html: {include: 'iifd_eng_practice_second_two_circles.html'}},
+                "PictureAccept",  {s: "Which one is it?",
+                                  as:   [["D","https://imgur.com/zXTKjiQ.png"], //2c2s - true
+                                        ["K","https://imgur.com/yv9ULuj.png"]]}], //1c3s- false
 
       // condition names: #-premiseorder-P1-disjunctorder-P2-Ashape-imageset-Afallaciousimageside
 
