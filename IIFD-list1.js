@@ -1,7 +1,7 @@
 // 'preload' should be the first item in the shuffle sequence so that images are preloaded
 // before any other items are displayed.
 
-var shuffleSequence = seq(//"intro",
+var shuffleSequence = seq(
                              "preload",
                              "taskdescrip",
                              "famknown",

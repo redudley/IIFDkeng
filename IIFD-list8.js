@@ -1,15 +1,15 @@
 1009,// 'preload' should be the first item in the shuffle sequence so that images are preloaded
 // before any other items are displayed.
 
-var shuffleSequence = seq(//"intro",
-                              "preload",
-                            //  "taskdescrip",
-                            //  "famknown",
-                            //  "singleprem",
-                              //randomize("prac_single"),
-                            //  "doubleprem",
-                            //  randomize("prac_double"),
-                            //  "start",
+var shuffleSequence = seq(
+                            "preload",
+                            "taskdescrip",
+                            "famknown",
+                            "singleprem",
+                             randomize("prac_single"),
+                            "doubleprem",
+                            randomize("prac_double"),
+                            "start",
                                 "4f7", "4f6", "4f5", "4f4", "4f3", "4f2", "4f1",
                                 "4e7", "4e6", "4e5", "4e4", "4e3", "4e2", "4e1",
                                 "4d7", "4d6", "4d5", "4d4", "4d3", "4d2", "4d1",

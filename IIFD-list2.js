@@ -1,15 +1,15 @@
 1009,// 'preload' should be the first item in the shuffle sequence so that images are preloaded
 // before any other items are displayed.
 
-var shuffleSequence = seq(//"intro",
-                              "preload",
-                            //  "taskdescrip",
-                            //  "famknown",
-                            //  "singleprem",
-                              //randomize("prac_single"),
-                            //  "doubleprem",
-                            //  randomize("prac_double"),
-                            //  "start",
+var shuffleSequence = seq(
+                             "preload",
+                             "taskdescrip",
+                             "famknown",
+                             "singleprem",
+                              randomize("prac_single"),
+                             "doubleprem",
+                             randomize("prac_double"),
+                             "start",
                                 "2a1", "2a2", "2a3", "2a4", "2a5", "2a6", "2a7",
                                 "2b1", "2b2", "2b3", "2b4", "2b5", "2b6", "2b7",
                                 "2c1", "2c2", "2c3", "2c4", "2c5", "2c6", "2c7",
@@ -138,7 +138,7 @@ var items = [
     ["doubleprem","PracticeMessage", {html: {include: 'iifd_introduce_double.html'}}],
 
     ["start","StartMessage", {html: {include: 'iifd_start.html'}}],
-    
+
     ["prac_single", //every shape: choice between 4c4s (correct, left) and 2c2s (wrong, right)
                 "Message",        {html: {include: 'iifd_eng_practice_first_every_shape.html'}},
                 "PictureAccept",  {s: "Which one is it?",
