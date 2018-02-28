@@ -84,12 +84,10 @@ var IMAGES_TO_PRELOAD = [
     "https://imgur.com/KduS46H.png", // 8-3c2s -   every-square,                 known & unknown conditions
     "https://imgur.com/M6bF0FW.png", // 8-2c4s -   three-circle,                 known & unknown conditions
 
-    "https://imgur.com/PTn3jIN.png", // 8-0c1s-control
-    "https://imgur.com/xXIconM.png", // 8-0c2s-control
-    "https://imgur.com/USp5nm3.png", // 8-1c3s-control
-    "https://imgur.com/zTHOZJg.png", // 8-2c1s-control
-    "https://imgur.com/bk685Bb.png", // 8-3c1s-control
-    "https://imgur.com/JwwC2C4.png", // 8-3c3s-control
+    "https://imgur.com/szZ1mVE.png", // 8-1c2s-control
+    "https://imgur.com/wkDVZgd.png", // 8-1c3s-control
+    "https://imgur.com/zXTKjiQ.png", // 8-2c2s-control
+    "https://imgur.com/yv9ULuj.png", // 8-4c4s-control
 
 ];
 

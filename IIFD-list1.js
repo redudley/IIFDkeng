@@ -2,14 +2,14 @@
 // before any other items are displayed.
 
 var shuffleSequence = seq(//"intro",
-                              "preload",
-                            //  "taskdescrip",
-                            //  "famknown",
-                            //  "singleprem",
-                              //randomize("prac_single"),
-                            //  "doubleprem",
-                            //  randomize("prac_double"),
-                            //  "start",
+                             "preload",
+                             "taskdescrip",
+                             "famknown",
+                             "singleprem",
+                              randomize("prac_single"),
+                             "doubleprem",
+                              randomize("prac_double"),
+                             "start",
                                 "1a1", "1a2", "1a3", "1a4", "1a5", "1a6", "1a7",
                                 "1b1", "1b2", "1b3", "1b4", "1b5", "1b6", "1b7",
                                 "1c1", "1c2", "1c3", "1c4", "1c5", "1c6", "1c7",
@@ -84,12 +84,11 @@ var IMAGES_TO_PRELOAD = [
     "https://imgur.com/KduS46H.png", // 8-3c2s -   every-square,                 known & unknown conditions
     "https://imgur.com/M6bF0FW.png", // 8-2c4s -   three-circle,                 known & unknown conditions
 
-    "https://imgur.com/PTn3jIN.png", // 8-0c1s-control
-    "https://imgur.com/xXIconM.png", // 8-0c2s-control
-    "https://imgur.com/USp5nm3.png", // 8-1c3s-control
-    "https://imgur.com/zTHOZJg.png", // 8-2c1s-control
-    "https://imgur.com/bk685Bb.png", // 8-3c1s-control
-    "https://imgur.com/JwwC2C4.png", // 8-3c3s-control
+    "https://imgur.com/szZ1mVE.png", // 8-1c2s-control
+    "https://imgur.com/wkDVZgd.png", // 8-1c3s-control
+    "https://imgur.com/zXTKjiQ.png", // 8-2c2s-control
+    "https://imgur.com/yv9ULuj.png", // 8-4c4s-control
+
 
 ];
 
