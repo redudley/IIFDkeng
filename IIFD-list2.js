@@ -18,6 +18,7 @@ var shuffleSequence = seq(
                                 "2f1", "2f2", "2f3", "2f4", "2f5", "2f6", "2f7",
                             );
 
+
 var defaults = [
     "Separator", {
         transfer: 1000,
